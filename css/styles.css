@@ -143,6 +143,9 @@ img {
 .left-nav-item {
   gap: 50px;
   flex-grow: 1;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom-color 0.2s;
 }
 
 .nav-pages {
@@ -155,7 +158,6 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--secondarytextcolor);
-
   justify-content: flex-end;
   display: flex;
   flex-direction: row;
@@ -170,6 +172,20 @@ img {
 .nav-contacts:hover,
 .nav-contacts:focus {
   color: var(--hovercolor);
+}
+
+.left-nav-item {
+  border-bottom: 3px solid;
+  border-bottom-color: var(--whitetextcolor);
+  radius: 2px;
+  display: block;
+  text-align: center;
+  padding: 31px 16px;
+  text-decoration: none;
+}
+
+.left-nav-item:hover {
+  border-bottom-color: var(--hovercolor);
 }
 
 .nav-contacts svg {
@@ -439,6 +455,7 @@ img {
 
 .icon-team {
   fill: var(--secondarytextcolor);
+  cursor: pointer;
 }
 
 .icon-team:hover {
