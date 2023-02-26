@@ -152,7 +152,7 @@ img {
   color: var(--maintextcolor);
 }
 
-.nav-contacts {
+.right-nav a {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -161,23 +161,33 @@ img {
   justify-content: flex-end;
   display: flex;
   flex-direction: row;
-  flex-direction: row;
   align-items: center;
+  text-decoration: none;
+}
+
+.right-nav a:hover {
+  color: #2196f3;
 }
 
 .nav-pages:hover,
 .nav-pages:focus,
 .footer-link:hover,
-.footer-link:focus,
-.nav-contacts:hover,
-.nav-contacts:focus {
+.footer-link:focus {
   color: var(--hovercolor);
+}
+
+.nav-contacts-icon {
+  padding-right: 10px;
+  fill: var(--secondarytextcolor);
+}
+
+.nav-contacts-icon:hover {
+  fill: var(--hovercolor);
 }
 
 .left-nav-item {
   border-bottom: 3px solid;
   border-bottom-color: var(--whitetextcolor);
-  radius: 2px;
   display: block;
   text-align: center;
   padding: 31px 16px;
@@ -186,15 +196,6 @@ img {
 
 .left-nav-item:hover {
   border-bottom-color: var(--hovercolor);
-}
-
-.nav-contacts svg {
-  padding-right: 10px;
-  fill: var(--secondarytextcolor);
-}
-
-.nav-contacts-icon:hover {
-  fill: var(--hovercolor);
 }
 
 /* Logos */
@@ -371,9 +372,8 @@ img {
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
-  padding-top: 250px;
+
   margin-bottom: 72px;
-  margin-top: -250px;
 }
 
 .what-we-do-image {
@@ -450,7 +450,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--whitetextcolor);
+  background-color: transparent;
 }
 
 .icon-team {
@@ -458,9 +458,11 @@ img {
   cursor: pointer;
 }
 
+.icon-list-item:hover {
+  background-color: var(--hovercolor);
+}
 .icon-team:hover {
   fill: var(--whitetextcolor);
-  background-color: var(--hovercolor);
 }
 
 /* Regular customers section */
@@ -649,13 +651,13 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--whitetextcolor);
+  margin-bottom: 16px;
 }
 
 .footer-social-list {
   display: flex;
   justify-content: center;
   gap: 24px;
-  margin-top: 16px;
 }
 
 .footer-social-list-link {
