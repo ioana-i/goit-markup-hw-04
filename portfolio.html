@@ -19,6 +19,7 @@
   </head>
 
   <body>
+
     <!-- Page header -->
     <header class="page-header">
       <!-- Navigation bar -->
@@ -34,16 +35,14 @@
           </li>
           <li class="left-nav-item"><a class="nav-pages link" href="contacts.html">Contacts</a></li>
         </ul>
-              <ul class="right-nav unstyled-list link">
-        <li>
-          <a class="nav-contacts link" href="mailto:info@devstudio.com"><svg class="nav-contacts-icon" width="29" height="16">
-              <use href="/images/icons.svg#icon-envelope"></use>
-            </svg>info@devstudio.com</a>
-        </li>
-        <li><a class="nav-contacts link" href="tel:+12127724159"><svg class="nav-contacts-icon" width="20" height="16">
-              <use href="/images/icons.svg#icon-smartphone"></use>
+        <ul class="right-nav unstyled-list link">
+        <li><a href="mailto:info@devstudio.com"><svg class="nav-contacts-icon" width="29" height="16">
+              <use href="./images/icons.svg#icon-envelope"></use>
+            </svg>info@devstudio.com</a></li>
+        <li><a href="tel:+12127724159"><svg class="nav-contacts-icon" width="20" height="16">
+              <use href="./images/icons.svg#icon-smartphone"></use>
             </svg>+1 212-771-4150</a></li>
-      </ul>
+       </ul>
       </nav>
       </div>
     </header>
@@ -51,7 +50,8 @@
     <!-- Unique page content -->
     <main>
       <section class="section portfolio-section">
-         <div class="container portfolio-container">
+
+      <div class="container">
     <!-- Top buttons -->
           <ul class="portfolio-top-buttons unstyled-list">
             <li class="portfolio-list"><button class="btn portfolio-button" type="button">All</button></li>
@@ -67,39 +67,30 @@
             <li class="portfolio-list">
               <button class="btn portfolio-button" type="button">Marketing</button>
             </li>
-          </ul>
-        </div>
+          </ul>   
 
       <!-- Portfolio page cards -->
+    <div class="cards-container">
         <ul class="portfolio-cards unstyled-list">
           <li class="portfolio-item">
             <img
-              class="portfolio-image"
-              width="180"
+              class="portfolio-image"     
               src="images/portfolio1.jpg"
-              alt="laptop with 3 people"
-            />
-            <div class="portfolio-card-wrapper">
+              alt="laptop with 3 people"> 
             <h2 class="portfolio-title">Technoduck</h2>
             <p class="portfolio-text">Web-site</p>
-          </li class="portfolio-item">
-          </div>
-          <li class="portfolio-item">
-            <img
-              class="portfolio-image"
-              width="180"
-              src="images/portfolio2.jpg"
-              alt="poster 2 male basketball players"
-            />
-            <div class="portfolio-card-wrapper">
-            <h2 class="portfolio-title">Poster New Orlean vs Golden Star</h2>
-            <p class="portfolio-text">Design</p>
-            </div>
           </li>
           <li class="portfolio-item">
             <img
-              class="portfolio-image"
-              width="180"
+              class="portfolio-image"      
+              src="images/portfolio2.jpg"
+              alt="poster 2 male basketball players">
+            <h2 class="portfolio-title one-liner">Poster New Orlean vs Golden Star</h2>
+            <p class="portfolio-text">Design</p>
+          </li>
+          <li class="portfolio-item">
+            <img
+              class="portfolio-image"      
               src="images/portfolio3.jpg"
               alt="seafood restaurant poster"
             />
@@ -110,8 +101,7 @@
           </li>
           <li class="portfolio-item">
             <img
-              class="portfolio-image"
-              width="180"
+              class="portfolio-image"    
               src="images/portfolio4.jpg"
               alt="headphones"
             />
@@ -123,7 +113,7 @@
           <li class="portfolio-item">
             <img
               class="portfolio-image"
-              width="180"
+        
               src="images/portfolio5.jpg"
               alt="2 boxes"
             />
@@ -135,7 +125,6 @@
           <li class="portfolio-item">
             <img
               class="portfolio-image"
-              width="180"
               src="images/portfolio6.jpg"
               alt="mac web screen"
             />
@@ -147,7 +136,6 @@
           <li class="portfolio-item">
             <img
               class="portfolio-image"
-              width="180"
               src="images/portfolio7.jpg"
               alt="magazine"
             />
@@ -159,7 +147,6 @@
           <li class="portfolio-item">
             <img
               class="portfolio-image"
-              width="180"
               src="images/portfolio8.jpg"
               alt="label"
             />
@@ -171,7 +158,6 @@
           <li class="portfolio-item">
             <img
               class="portfolio-image"
-              width="180"
               src="images/portfolio9.jpg"
               alt="laptop"
             />
@@ -180,7 +166,10 @@
             <p class="portfolio-text">Apps</p>
             </div>
           </li>
-        </ul>
+        </ul> 
+        </div>
+      </div>
+     </section>
     </main>
 
     <!-- Page footer -->

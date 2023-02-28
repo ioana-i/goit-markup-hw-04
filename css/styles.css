@@ -166,7 +166,7 @@ img {
 }
 
 .right-nav a:hover {
-  color: #2196f3;
+  color: var(--hovercolor);
 }
 
 .nav-pages:hover,
@@ -228,8 +228,7 @@ img {
 }
 
 /* Common images styles */
-.what-we-do-image,
-.portfolio-image {
+.what-we-do-image {
   width: 370px;
   height: 294px;
 }
@@ -257,7 +256,6 @@ img {
       rgb(47, 48, 58)
     ),
     url(..//images/hero-background.jpg);
-  max-width: 1600px;
 }
 
 .hero-title {
@@ -372,7 +370,6 @@ img {
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
-
   margin-bottom: 72px;
 }
 
@@ -458,10 +455,14 @@ img {
   cursor: pointer;
 }
 
+.icon-list-item svg {
+  fill: var(--secondarytextcolor);
+}
+
 .icon-list-item:hover {
   background-color: var(--hovercolor);
 }
-.icon-team:hover {
+.footer-social-list-icon:hover {
   fill: var(--whitetextcolor);
 }
 
@@ -558,52 +559,77 @@ img {
 }
 
 /* Portfolio cards */
+.cards-container {
+  max-width: 1200px;
+  padding: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+}
+
 .portfolio-cards {
   display: flex;
+  /* Make a flex container multiline */
   flex-wrap: wrap;
-  padding: 10px;
-  gap: 20px;
+  /* Set gap between rows and columns */
+  gap: 30px;
+  padding: 0;
+  list-style: none;
   justify-content: center;
-  flex-direction: row;
-}
-
-.portfolio-card-wrapper {
-  border-top: none;
-  border: 1px solid #eeeeee;
-  color: var(--secondarytextcolor);
-  padding: 32px 16px;
-}
-
-.portfolio-item:hover {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-  cursor: pointer;
 }
 
 .portfolio-item {
+  /*  Set the width of the elements  */
+  flex-basis: calc((125% - 30px) / 4);
   border: 0.5px solid #eee;
   border-bottom: 1px solid #eee;
-  margin-bottom: 48px;
-  margin-right: 24px;
-  width: 360px;
+  border-radius: 4px;
+  box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  margin-left: 10px;
+  margin-top: 10px;
+  width: 370px;
 }
 
-.portfolio-title {
+.portfolio-image {
+  width: 370px;
+}
+
+.portfolio-item h2 {
+  font-size: 20px;
   font-weight: 700;
   font-size: 18px;
   line-height: 36px;
   letter-spacing: 0.06em;
   color: var(--maintextcolor);
-  margin-bottom: 8px;
   text-align: left;
+  margin-top: 20px;
+  margin-left: 24px;
 }
-.portfolio-text {
+
+.one-line-title {
+  display: flex;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.portfolio-item p {
+  margin: 0;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
   color: var(--secondarytextcolor);
   text-align: left;
+  margin-bottom: 20px;
+  margin-left: 24px;
+}
+
+.portfolio-item:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+  cursor: pointer;
 }
 
 /* Footer */
